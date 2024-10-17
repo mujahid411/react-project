@@ -57,7 +57,7 @@ const Admin = () => {
     return (
         <div className="container mx-auto p-4">
             <h1 className="text-xl font-bold mb-4">Admin: Create a Form</h1>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='bg-indigo-300  p-4 rounded-md'>
                 <div className="mb-4">
                     <label className="block text-gray-700">Form Title</label>
                     <input
