@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Admin from './pages/Admin';
-import User from './pages/User';
-import FormSubmissions from './pages/FormSubmissions';
+import Admin from './components/Admin';
+import User from './components/User';
+import FormSubmissions from './components/FormSubmissions';
 
 const App = () => (
   <Router>
