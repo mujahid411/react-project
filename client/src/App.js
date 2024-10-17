@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Admin from './components/Admin';
 import User from './components/User';
 import FormSubmissions from './components/FormSubmissions';
+import Home from './components/Home';
 
 const App = () => (
   <Router>
@@ -10,6 +11,7 @@ const App = () => (
       <Routes>
         <Route path="/admin" element={<Admin />} />
         <Route path="/user" element={<User />} />
+        <Route path="/" element={<Home />} />
         <Route path="/admin/forms/:id" element={<FormSubmissions />} />
       </Routes>
     </div>

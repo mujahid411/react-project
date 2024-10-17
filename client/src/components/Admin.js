@@ -66,6 +66,7 @@ const Admin = () => {
                         onChange={(e) => setTitle(e.target.value)}
                         className="w-full p-2 border rounded"
                         placeholder="Enter form title"
+                        required
                     />
                 </div>
 
@@ -78,6 +79,7 @@ const Admin = () => {
                             onChange={(e) => handleLabelChange(e, index)}
                             className="w-full p-2 border rounded mb-2"
                             placeholder="Enter field label"
+                            required
                         />
 
                         <label className="block text-gray-700">Field {index + 1} Type</label>

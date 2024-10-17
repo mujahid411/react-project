@@ -40,11 +40,13 @@ const User = () => {
                                 type={field.type}
                                 onChange={(e) => setFormData({ ...formData, [field.label]: e.target.value })}
                                 className="w-full p-2 border rounded"
+                                required
                             />
                         </div>
                     ))}
                     <button
                         onClick={() => handleSubmit(form._id)}
+                        type='submit'
                         className="px-4 py-2 bg-green-500 text-white rounded"
                     >
                         Submit
